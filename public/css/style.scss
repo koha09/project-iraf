@@ -1,0 +1,137 @@
+$background_color: white;
+$primary_color : #761412;
+$primary_font : 'Alegreya', serif;
+$secondary_font:'Roboto', sans-serif;
+$break-small : 764px;
+
+// Mixin
+@mixin background-size($size) {
+	-webkit-background-size: $size;
+	-moz-background-size: $size;
+	-ms-background-size: $size;
+	background-size: $size;
+}
+// Mixin
+
+// Global
+body{
+	background:url("../img/background.png") no-repeat;
+	@include background-size(100%);
+	background-attachment:fixed;
+	background-color:#f3f3f3;
+}
+h5{
+	font-family:$secondary_font;
+}
+// Global
+
+// Header
+header{
+	background-color:$primary_color;
+
+	.navbar-iraf {
+		@media screen and  (min-width: $break-small) {
+			height:6em;
+			padding:0px;
+		}
+
+		.nav-link {
+			font-family: $primary_font;
+		}
+		.navbar-logo {
+			position:relative;
+			top:2em;
+		}
+		.brand {
+			text-align:center;
+			margin-left:0.11em;
+
+			h1 {
+				color:white;
+				font-family: $primary_font;
+			}
+		}
+	}
+}
+// Header
+
+// Wrapper
+#wrapper{
+	@media screen and  (min-width: $break-small) {
+		margin: 7.5em 1em;
+	}
+	@media screen and (max-width:$break-small){
+		margin: 5em 0.3em;
+	}
+	aside, #content {
+		background-color:$background-color;
+		margin:0.22em;
+		padding:1em;
+		z-index:-3;
+
+		.block_archiv {
+			padding: 1em 3em;
+		}
+		p {
+			font-family: $secondary_font;
+		}
+		hr{
+			color:$primary_color;
+			width:70%;
+			background-color:$primary_color;
+		}
+		h2,h3 {
+			color:$primary-color;
+			font-family: $primary_font;
+			font-size:1.5rem;
+			margin:0.9em 0em;
+		}
+	}
+}
+// Wrapper
+
+// Other
+.table-iraf {
+
+	td {
+		text-align:center;
+		a {
+			color:black;
+		}
+	}
+	th{
+		background-color:$primary_color;
+		color:white;
+		text-align:center;
+	}
+}
+td,th,thead,tbody{
+	border-color:$primary_color;
+	border: 1px solid $primary_color;
+}
+.table th,.table td {
+	padding:.25rem;
+}
+.authors_list {
+	list-style:none;
+	padding:0em;
+}
+.page-footer {
+	background:$primary-color;
+}
+.footer-copyright{
+	color:#bdbdbd;
+	font-family:$secondary_font;
+	font-size:0.9rem;
+}
+.category {
+	color: $primary_color;
+	margin: .8em;
+	font-family: $primary_font;
+}
+.footer-copyright a{
+	color:white;
+}
+.breadcrumb a {
+	color: #333;
+}

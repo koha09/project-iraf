@@ -1,0 +1,43 @@
+$background_color: white;
+$primary_color : #761412;
+$primary_font : 'Alegreya', serif;
+$secondary_font:'Roboto', sans-serif;
+$break-small : 764px;
+
+// Mixin
+@mixin background-size($size) {
+	-webkit-background-size: $size;
+	-moz-background-size: $size;
+	-ms-background-size: $size;
+	background-size: $size;
+}
+// Mixin
+
+body{
+	background:url("C:/Iraf/layout/img/background.png") no-repeat;
+	@include background-size(100%);
+	background-attachment:fixed;
+	background-color:#f3f3f3;
+}
+header{
+	background-color:$primary_color;
+	padding:1.3em
+}
+.wrapper{
+	background-color:white;
+	padding:4em;
+}
+h2{
+	text-family:$primary_font;
+}
+a,a:hover{
+	color:white;
+}
+.page-footer {
+	background:$primary-color;
+}
+.footer-copyright{
+	color:#bdbdbd;
+	font-family:$secondary_font;
+	font-size:0.9rem;	
+}

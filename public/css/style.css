@@ -1,0 +1,95 @@
+body {
+  background: url("../img/background.png") no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -ms-background-size: 100%;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-color: #f3f3f3; }
+
+h5 {
+  font-family: "Roboto", sans-serif; }
+
+header {
+  background-color: #761412; }
+  @media screen and (min-width: 764px) {
+    header .navbar-iraf {
+      height: 6em;
+      padding: 0px; } }
+  header .navbar-iraf .nav-link {
+    font-family: "Alegreya", serif; }
+  header .navbar-iraf .navbar-logo {
+    position: relative;
+    top: 2em; }
+  header .navbar-iraf .brand {
+    text-align: center;
+    margin-left: 0.11em; }
+    header .navbar-iraf .brand h1 {
+      color: white;
+      font-family: "Alegreya", serif; }
+
+@media screen and (min-width: 764px) {
+  #wrapper {
+    margin: 7.5em 1em; } }
+@media screen and (max-width: 764px) {
+  #wrapper {
+    margin: 5em 0.3em; } }
+#wrapper aside, #wrapper #content {
+  background-color: white;
+  margin: 0.22em;
+  padding: 1em;
+  z-index: -3; }
+  #wrapper aside .block_archiv, #wrapper #content .block_archiv {
+    padding: 1em 3em; }
+  #wrapper aside p, #wrapper #content p {
+    font-family: "Roboto", sans-serif; }
+  #wrapper aside hr, #wrapper #content hr {
+    color: #761412;
+    width: 70%;
+    background-color: #761412; }
+  #wrapper aside h2, #wrapper aside h3, #wrapper #content h2, #wrapper #content h3 {
+    color: #761412;
+    font-family: "Alegreya", serif;
+    font-size: 1.5rem;
+    margin: 0.9em 0em; }
+
+.table-iraf td {
+  text-align: center; }
+  .table-iraf td a {
+    color: black; }
+.table-iraf th {
+  background-color: #761412;
+  color: white;
+  text-align: center; }
+
+td, th, thead, tbody {
+  border-color: #761412;
+  border: 1px solid #761412; }
+
+.table th, .table td {
+  padding: .25rem; }
+
+.authors_list {
+  list-style: none;
+  padding: 0em; }
+
+.page-footer {
+  background: #761412; }
+
+.footer-copyright {
+  color: #bdbdbd;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem; }
+
+.category {
+  color: #761412;
+  margin: .8em;
+  font-family: "Alegreya", serif; }
+
+.footer-copyright a {
+  color: white; }
+
+.breadcrumb a {
+  color: #333; }
+
+/*# sourceMappingURL=style.css.map */
